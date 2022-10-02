@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Register</title>
+</head>
+<body>
+	<form action="login.php" method="post">
+		<fieldset>
+			<legend>Register</legend>
+			<p>
+				<label>Nama</label>
+				<input type="text" name="nama" placeholder="nama lengkap..." />
+			</p>
+			<p>
+				<label>Username:</label>
+				<input type="text" name="username" placeholder="your name..." />
+			</p>
+			<p>
+				<label>Email:</label>
+				<input type="email" name="email" placeholder="your email..." />
+			</p>
+			<p>
+				<label>Password:</label>
+				<input type="password" name="password" placeholder="Password..." />
+			</p>
+			<p>
+				<label>Jenis Kelamin:</label>
+				<label><input type="radio" name="jenis_kelamin" value="laki-laki" />Laki-laki</label>
+				<label><input type="radio" name="jenis_kelamin" value="perempuan" />Perempuan</label>
+			</p>
+			<p>
+				<label>Agama:</label>
+				<select name="agama">
+					<option value="islam">Islam</option>
+					<option value="kristen">Kristen</option>
+					<option value="budha">Budha</option>
+					<option value="katholik">Katholik</option>
+					<option value="konghucu">Konghucu</option>
+				</select>
+			</p>
+			<p>
+				<label>Biografi:</label>
+				<textarea name="biografi"></textarea>
+			</p>
+			<p>
+				<label>Alamat Web:</label>
+				<input type="url" name="name" placeholder="Masukkan URL Web..." />
+			</p>
+			<p>
+				<label>Tanggal Lahir:</label>
+				<input type="date" name="tanggal">
+			</p>
+			<p>
+				<label>Umur:</label>
+				<input type="number" min="10" max="90" name="umur">
+			</p>
+			<p>
+				<input type="submit" name="submit" value="Send">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>
