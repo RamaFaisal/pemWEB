@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan multimedia</title>
+</head>
+<body>
+	<div style="text-align:center"> 
+	<button onclick="playVid()" type="button">PLAY</button>
+	<button onclick="pauseVid()" type="button">PAUSE</button>
+  	<button onclick="makeBig()" type="button">BIG</button>
+  	<button onclick="makeSmall()" type="button">SMALL</button>
+  	<button onclick="makeNormal()" type="button">NORMAL</button>
+<br><br>
+	<video id="inivideo" controls>
+		<source src="SpongeBob.mp4" type="video/mp4">
+		<track src="movie.en.vtt" kind="subtitles" srclang="en" label="English">
+	</video>
+<script>
+	var myVideo = document.getElementById("inivideo");
+
+	function playVid() {
+		myVideo.play()
+	}
+
+	function pauseVid() {
+		myVideo.pause()
+	}
+
+	function makeBig() { 
+    myVideo.width = 1080; 
+	} 
+
+	function makeSmall() { 
+    myVideo.width = 420; 
+	} 
+
+	function makeNormal() { 
+    myVideo.width = 720; 
+	}
+	
+</script>
+</body>
+</html>
