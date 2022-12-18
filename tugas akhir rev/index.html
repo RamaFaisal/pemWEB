@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sano VapeStore">
+	<meta name="keywords" content="VapeStore">
+	<meta name="description" content="Sanoo VapeStore merupakan sebuah vapestore online dimana seseorang dapat membeli vape atau rokok elektrik, liquid, dan perlengkapan yang dibutuhkan di dalam sebuah pod maupun mod.">
+	<title>SANOO | Vape Store</title>
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2><a href="#h">SANOO Vape Store</a></h2>
+		</div>
+		<div class="nav_links">
+			<ul>
+				<li><a href="#h">Home</a></li>
+				<li><a href="#sh">Shop</a></li>
+				<li><a href="#bout">About</a></li>
+				<li><a href="#con">Contact</a></li>
+			</ul>
+		</div>
+		<button><a href="login.html">LOGIN</a></button>
+		<div id="menu-btn" class="fas fa-bars"></div>
+	</header>
+
+	<section id="h">
+		<!-- Gambar slide mulai-->
+		<div  class="slider">
+			<div class="slides">
+				<!--radio button start-->
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<!--radio button end-->
+				<!--slide image start-->
+				<div class="slide first">
+					<img src="gambar/hexom.jpg" alt="hexom.jpg">
+				</div>
+				<div class="slide">
+					<img src="gambar/vinciX.jpg" alt="vinciX.jpg">
+				</div>
+				<div class="slide">
+					<img src="gambar/smok.jpg" alt="smok.jpg">
+				</div>
+				<div class="slide">
+					<img src="gambar/caliburn.jpg" alt="caliburn.jpg">
+				</div>
+				<!--slide image end-->
+				<!--automatic navigation start-->
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+				</div>
+				<!--automatic navigation end-->
+			</div>
+			<!--manual navigation start-->
+			<div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+			</div>
+			<!--manual navigation end-->
+		</div>
+		<!-- Gambar slide berakhir-->
+		<script type="text/javascript">
+			var counter = 1;
+			setInterval(function(){
+				document.getElementById('radio' + counter).checked = true;
+				counter++;
+				if (counter > 4) {
+					counter = 1;
+				}
+			}, 5000);
+		</script>
+	</section>
+
+	<section class="container-shop">
+		<h1 id="sh" class="heading-title">SHOP</h1>
+		<div class="box-container">
+			<div class="box">
+				<div class="image">
+	            	<img src="gambar/gk2.jpg" alt="gk2.jpg">
+	        	</div>
+	         	<div class="content">
+		            <h2>Caliburn GK2</h2>
+		            <p>CALIBURN GK2 adalah versi upgrade dari seri KOKO PRIME. Dengan desain yang modis dan fungsi yang sudah di Upgrade</p>
+		            <a href="pesan.html" class="btn">Pesan Sekarang</a>
+	         	</div>
+			</div>
+			<div class="box">
+				<div class="image">
+	            	<img src="gambar/centaurus.jpg" alt="centaurus.jpg">
+	        	</div>
+	         	<div class="content">
+		            <h2>MOD CENTAURUS</h2>
+		            <p>Dengan desain yang tampak berkelas, banyak kelebihan yang ditawarkan Lost Vape Centaurus Q200.</p>
+		            <a href="pesan.html" class="btn">Pesan Sekarang</a>
+	         	</div>
+			</div>
+			<div class="box">
+				<div class="image">
+	            	<img src="gambar/vinciQ.jpg" alt="vinciQ.jpg">
+	        	</div>
+	         	<div class="content">
+		            <h2>VINCI POD Q</h2>
+		            <p>Voopoo Vinci Q adalah pof vape berbentuk kecil yang memiliki kualitas build yang tangguh dan hasil kinerja rasa yang luar biasa.</p>
+		            <a href="pesan.html" class="btn">Pesan Sekarang</a>
+	         	</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="bout">
+		<div class="wrapper">
+			<h2 class="heading-title">SANOO VAPESTORE</h2>
+				<div class="img">
+					<img src="gambar/sanoo.jpg" alt="sanoo.jpg">
+				</div>
+				<div class="tentang">
+					<p>SANOO Vape Store merupakan sebuah webste yang menawarkan berbagai macam produk rokok elektrik/vapor dan juga perangkat yang ada didalamnya. Yang dijamin aman dan real.</p>
+				</div>
+		</div>
+	</section>
+
+	<section id="con" class="footer">
+
+	   <div class="box-container">
+
+	      <div class="box">
+	         <h3>Link Utama</h3>
+	         <a href="#h"> <i class="fas fa-angle-right"></i> Home</a>
+	         <a href="#sh"> <i class="fas fa-angle-right"></i> Shop</a>
+	         <a href="#bout"> <i class="fas fa-angle-right"></i> About</a>
+	         <a href="#con"> <i class="fas fa-angle-right"></i> Contact</a>
+	      </div>
+
+	      <div class="box">
+	         <h3>Link Tambahan</h3>
+	         <a href="#"> <i class="fas fa-angle-right"></i> Semua Pertanyaan</a>
+	         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+	         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+	         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+	      </div>
+
+	      <div class="box">
+	         <h3>Info Kontak</h3>
+	         <a href="#"> <i class="fas fa-phone"></i> +62811112225</a>
+	         <a href="#"> <i class="fas fa-phone"></i> +62851111222 </a>
+	         <a href="#"> <i class="fas fa-envelope"></i> sanoovapestore@gmail.com </a>
+	         <a href="#"> <i class="fas fa-map"></i> Semarang, Indonesia</a>
+	      </div>
+
+	      <div class="box">
+	         <h3>Follow Kami</h3>
+	         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+	         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+	         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+	         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+	      </div>
+
+	   </div>
+
+	   <div class="credit"> Copyright <span>SANOO.org</span> 2022 </div>
+
+	</section>
+</body>
+</html>
